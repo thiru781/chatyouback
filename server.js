@@ -4,7 +4,7 @@ const cors = require("cors");
 const { Server } = require("socket.io");
 
 const app = express();
-aapp.use(cors({
+app.use(cors({
   origin: "https://chatyou-hxzto0ry1-thiru781s-projects.vercel.app"
 }));
 const server = http.createServer(app);
