@@ -5,13 +5,13 @@ const { Server } = require("socket.io");
 
 const app = express();
 app.use(cors({
-  origin: "https://chatyou-hxzto0ry1-thiru781s-projects.vercel.app"
+  origin: "https://chatyou-pi.vercel.app"
 }));
 const server = http.createServer(app);
 
 const io = new Server(server, {
   cors: {
-    origin: "https://chatyou-hxzto0ry1-thiru781s-projects.vercel.app", // ✅ Replace with your actual Vercel URL
+    origin: "https://chatyou-pi.vercel.app", // ✅ Replace with your actual Vercel URL
     methods: ["GET", "POST"],
   },
 });
